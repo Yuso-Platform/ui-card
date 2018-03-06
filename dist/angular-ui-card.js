@@ -23,7 +23,7 @@ function CardDirective (Card, $timeout) {
   return {
     restrict : 'E',
     template : '<form>' +'<div style="margin:0; ">'+
-    '<div  class="card-wrapper" style="float:right;width:50%;overflow:hidden;margin-top: 40px;margin-bottom: 1px"></div>' +
+    '<div  class="card-wrapper" style="float:right;width:50%;overflow:hidden;margin-top: 40px;margin-bottom:30px"></div>' +
     '<div style="float:right;width:50%;overflow:hidden;"  ng-transclude class="form-wrapper" ng-disabled="disable"></div>' +'</div>'+
     '</form>',
     replace : true,

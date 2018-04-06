@@ -783,7 +783,7 @@ function PaymentFactory (QJ) {
 
   var restrictNumeric = function(e) {
     var input;
-    if (e.metaKey || e.ctrlKey) {
+    if (e.metaKey || e.originalEvent.ctrlKey) {
       return true;
     }
     if (e.which === 32) {

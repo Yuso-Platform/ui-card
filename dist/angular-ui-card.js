@@ -636,6 +636,9 @@ function PaymentFactory (QJ) {
       return function() {
         var target, value;
         target = e.target;
+        event = new Event('keyup');
+        event.keyCode= 13;
+        target.dispatchEvent(event);
         value = QJ.val(target);
         value = self.fns.formatCardNumber(value);
         return QJ.val(target, value);
